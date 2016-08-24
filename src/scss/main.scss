@@ -1,0 +1,13 @@
+@import "variables";
+@import "materialize";
+@import "../components/Home/home";
+@import "../components/navbar/navbar";
+.app-fullheght {
+  height: 100%;
+}
+
+.page-footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}

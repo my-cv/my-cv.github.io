@@ -1,0 +1,21 @@
+.circle {
+
+  &.small {
+    $radius: 100px;
+    width: $radius;
+    height: $radius;
+    border-radius: $radius;
+    transition: all 0.5s;
+    background-color: blue;
+  }
+
+  &.large {
+    $radius: 500px;
+    width: $radius;
+    height: $radius;
+    border-radius: $radius;
+    transition: all 0.5s;
+    background-color: white;
+  }
+
+}

@@ -1,0 +1,11 @@
+.logo-animate {
+  &.small {
+    transform: scale(-300.0);
+    transition: all 10s;
+  }
+
+  &.large {
+    transform: scale(300.0);
+    transition: all 10s;
+  }
+}
