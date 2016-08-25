@@ -1,11 +1,18 @@
 .circle {
 
+  position: absolute;
+  right: 50%;
+  top: 50%;
+  bottom: 50%;
+  transform: translate(-50%,-50%);
+  cursor: pointer;
+
   &.small {
-    $radius: 100px;
+    $radius: 10px;
     width: $radius;
     height: $radius;
     border-radius: $radius;
-    transition: all 0.5s;
+    transition: all 1.5s;
     background-color: blue;
   }
 
@@ -14,8 +21,16 @@
     width: $radius;
     height: $radius;
     border-radius: $radius;
-    transition: all 0.5s;
-    background-color: white;
+    transition: all 1.5s;
+    background-color: hotpink;
+  }
+
+  &.start {
+    left: 1%;
+  }
+
+  &.enterd {
+    left: 50%;
   }
 
 }

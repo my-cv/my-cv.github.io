@@ -4,19 +4,30 @@ export default class Home extends React.Component {
 
   constructor(props) {
     super(props);
-    this.state = { size: 'small' };
+    this.state = { size: 'small', position: 'start' };
+    this.sequence = [
+      { size: 'small', position: 'start' },
+      { size: 'small', position: 'enterd' },
+      { size: 'large', position: 'enterd' },
+      { size: 'small', position: 'enterd' },
+    ];
+    this.stateIndex = 0;
   }
 
+ next() {
+   ++this.stateIndex;
+   return this.sequence[ this.stateIndex ];
+ }
+
   animateCircle() {
-     let vinay = this;
-    setInterval( function () {
-         vinay.state.size === 'small' ? vinay.setState( { size: 'large' } ) : vinay.setState( { size: 'small' } ) ;
-    } , 1000 );
+    this.setState( this.next() );
   }
 
   render() {
     return (
-      <div onClick={ () => { this.animateCircle() } } className={ 'circle ' + this.state.size } ></div>
+      <div onClick={ () => { this.animateCircle() } }
+        className={ 'circle ' + this.state.size + ' ' + this.state.position } >
+      </div>
     );
   }
 
