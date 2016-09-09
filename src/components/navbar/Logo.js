@@ -7,7 +7,6 @@ export default class Logo extends React.Component {
     this.startAnimation();
   }
    componentDidMount() {
-    this.setState( { size: 'large' } )
 
   }
 
@@ -22,7 +21,7 @@ export default class Logo extends React.Component {
   render() {
     let size = this.state.size;
     return (
-      <a href="#" className = { 'brand-logo logo-animate ' + size } > Sagar </a>
+      <a href="#" className = { 'brand-logo logo-animate ' } > Krishna Sagar R </a>
     );
   }
 

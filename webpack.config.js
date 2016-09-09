@@ -1,4 +1,3 @@
-var HtmlWebpackPlugin = require('html-webpack-plugin');
 var path = require('path');
 var webpack = require('webpack');
 
@@ -6,8 +5,11 @@ module.exports = {
   entry: path.join(__dirname, 'src/index.js'),
   context: path.join(__dirname, ''),
   output: {
-   path: path.join(__dirname, 'bin'),
+   path: __dirname,
    filename: 'bundle.js'
+  },
+  resolve: {
+
   },
   module: {
     loaders: [

@@ -5,4 +5,7 @@ import './scss/main.scss';
 import 'file?name=[name].[ext]!./index.html';
 import Navbar from './components/navbar/Navbar.js';
 import Footer from './components/footer/Footer.js';
+import $ from 'jquery';
+window.$ = window.jQuery = $;
+import '../node_modules/materialize-css/bin/materialize.js';
 render(AppRoutes,document.getElementById('app'));
