@@ -16,7 +16,7 @@ export default class About extends React.Component {
           }
         } >
             <h4 className=' white-text center' >Hi I'm Sagar</h4>
-            <p  className='white-text center' >I born  and grownup in my home town Kakinada
+            <p  className='white-text center' >I born  and grown up in my home town Kakinada
              <br/> I'm a polyglot programmer currently working as a fronted developer.
                 I'm interested in building better software and help others to do it</p>
         </div>);
