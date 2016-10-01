@@ -4,20 +4,22 @@ export default class About extends React.Component {
 
   render() {
 
+
+
     return (
-      <Principles
-
-        list={[
-          {id: 1,text:'People in team should be passionic towords the work they do.'},
-          {id: 2,text:'They should not keep boundaries for their skills and learning new languages, frameworks or methodologies.'},
-          {id: 3,text:'Be open for other\'s ideas and opinions.'},
-          {id: 4,text:'Be helped and be willing to help with code reviews and pair programming'}
-      ]}
-
-        heading = {'We follow these principles'}
-
-      />
-    );
+        <div className='' style={{
+           backgroundImage: 'url(https://c2.staticflickr.com/6/5612/15195344874_5af3d86583_b.jpg)',
+           backgroundSize: '100%',
+           height: ( document.body.scrollHeight- 64 )+ 'px',
+           width: '100%',
+           overflow: 'auto'
+          }
+        } >
+            <h4 className=' white-text center' >My name is Sagar</h4>
+            <p  className='white-text center' >I born  and grownup in my home town Kakinada
+             <br/> I'm a polyglot programmer currently working as a fronted developer.
+                I'm interested in building better software and help others to do it</p>
+        </div>);
 
   }
 
